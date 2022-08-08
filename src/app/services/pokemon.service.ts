@@ -10,9 +10,12 @@ export class PokemonService {
   
   constructor(private httpClient: HttpClient) { }
 
-  getPokemonList() :Observable<any>{
-    let limit = 10;
-    let offset = 0;
+  getPokemonList(limit : number, offset : number) :Observable<any>{
     return this.httpClient.get(`${this.url}pokemon?limit=${limit}&offset=${offset}`);
   }
+
+  getPokemonDetails(idPokemon : number) : Observable<any>{
+    return this.httpClient.get(`${this.url}pokemon/${idPokemon}/`);
+  }
+
 }

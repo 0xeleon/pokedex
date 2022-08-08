@@ -1,0 +1,8 @@
+table {
+    width: 90%;
+    margin : 10px;
+}
+
+.hidden{
+    display: none;
+}
