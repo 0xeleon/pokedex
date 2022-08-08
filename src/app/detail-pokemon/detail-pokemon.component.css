@@ -1,0 +1,10 @@
+.pokemon-card {
+    max-width: 400px;
+}
+.pokemon-card-img {
+    width: calc(40% + 30px) !important;
+}
+
+ul > li {
+    font-size: 16px;
+}
