@@ -2,7 +2,7 @@
     <mat-card-title-group>
         <mat-card-title>{{pokemonDetail.name}}</mat-card-title>
     </mat-card-title-group>
-    <img mat-card-image class="pokemon-card-img"  src={{pokemonDetail.image}}>
+    <img mat-card-image class="pokemon-card-img" src={{pokemonDetail.image}}>
     <mat-card-content>
         <div *ngIf="pokemonDetail.load === false">
             <mat-spinner></mat-spinner>
@@ -11,7 +11,7 @@
             <h3> Weight : {{pokemonDetail.weight}} lbs</h3>
             <h3> Habilities: </h3>
             <ul>
-                <li *ngFor="let ability of pokemonDetail.abilities" > {{ability}} </li>
+                <li *ngFor="let ability of pokemonDetail.abilities"> {{ability}} </li>
             </ul>
         </div>
     </mat-card-content>
@@ -19,4 +19,3 @@
         <button mat-raised-button color="primary" (click)="goToList()"> GO TO LIST </button>
     </mat-card-actions>
 </mat-card>
-  
