@@ -20,11 +20,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NotImageDirective } from './directives/not-image.directive';
 @NgModule({
   declarations: [
     AppComponent,
     ListPokemonComponent,
-    DetailPokemonComponent
+    DetailPokemonComponent,
+    NotImageDirective
   ],
   imports: [
     BrowserModule,
